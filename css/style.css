@@ -154,9 +154,9 @@ a {
 }
 
 .hero .head {
+  margin: 0 0.5rem;
   padding: 240px 0 170px;
   max-width: 40rem;
-  margin: 0 0.5rem;
 }
 
 .hero .head p {
@@ -182,6 +182,13 @@ a {
 
 .hero .below {
   padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0.5rem;
 }
 
 .hero .below .logos p {
@@ -205,6 +212,72 @@ a {
 
 .hero .below .logos .logo img {
   height: 28px;
+}
+
+.hero .below .video-summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.hero .below .video-summary div:first-child {
+  text-align: right;
+  width: 450px;
+}
+
+.hero .below .video-summary div:first-child p {
+  line-height: 1.6;
+}
+
+.hero .below .video-summary .large-button .button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #0ba4db;
+  margin: 0 0 0 10px;
+  padding: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  transition: all 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  will-change: box-shadow;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  pointer-events: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  transition: 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  -webkit-transition-property: background, color, -webkit-box-shadow, -webkit-transform;
+  transition-property: background, color, -webkit-box-shadow, -webkit-transform;
+  transition-property: background, box-shadow, color, transform;
+  transition-property: background, box-shadow, color, transform, -webkit-box-shadow, -webkit-transform;
+  will-change: background, box-shadow, color, transform;
+  font-weight: 500;
+}
+
+.hero .below .video-summary .large-button .button svg {
+  z-index: 8888888888;
+  fill: white;
 }
 
 .worldmap {

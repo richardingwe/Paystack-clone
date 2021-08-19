@@ -128,9 +128,9 @@ a {
 	z-index: 5;
 	position: relative;
 	.head {
+		margin: 0 0.5rem;
 		padding: 240px 0 170px;
 		max-width: 40rem;
-		margin: 0 0.5rem;
 
 		p {
 			margin-bottom: 2.1rem;
@@ -151,6 +151,10 @@ a {
 
 	.below {
 		padding-bottom: 48px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 0.5rem;
+
 		.logos {
 			p {
 				font-size: 14px;
@@ -167,6 +171,61 @@ a {
 				}
 				img {
 					height: 28px;
+				}
+			}
+		}
+		.video-summary {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+
+			div:first-child {
+				text-align: right;
+				width: 450px;
+
+				p {
+					line-height: 1.6;
+				}
+			}
+			.large-button {
+				.button {
+					width: 35px;
+					height: 35px;
+					border-radius: 50%;
+					background: #0ba4db;
+					margin: 0 0 0 10px;
+					padding: 0;
+					transition: all 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+					will-change: box-shadow;
+					display: -ms-flexbox;
+					display: flex;
+					-ms-flex-align: center;
+					align-items: center;
+					-ms-flex-pack: center;
+					justify-content: center;
+					pointer-events: none;
+
+					border: none;
+					cursor: pointer;
+					font-family: inherit;
+					font-size: 1.5rem;
+					white-space: nowrap;
+					vertical-align: middle;
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+					outline: none;
+					text-decoration: none;
+					transition: 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+					transition-property: background, box-shadow, color, transform;
+					will-change: background, box-shadow, color, transform;
+					font-weight: 500;
+
+					svg {
+						z-index: 8888888888;
+						fill: white;
+					}
 				}
 			}
 		}
