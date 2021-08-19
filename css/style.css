@@ -9,6 +9,10 @@
 header {
   padding: 12px 3rem;
   background-color: #f1fef4f2;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
 header nav .logo svg {
@@ -143,12 +147,30 @@ a {
   margin: 0 auto;
 }
 
+.worldmap {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  height: 100%;
+  width: 55%;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  z-index: 2;
+}
+
+.worldmap svg {
+  z-index: 2;
+}
+
 .hero {
   background-color: #f1fef4f2;
+  z-index: 5;
 }
 
 .hero .head {
-  padding: 180px 0 180px;
+  padding: 240px 0 180px;
   max-width: 40rem;
   margin: 0 0.5rem;
 }
