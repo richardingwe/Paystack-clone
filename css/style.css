@@ -398,7 +398,7 @@ section.two .feature .right .feature_details .feature_benefits ul li::before {
 
 section.two .feature .right .feature_details .feature_benefits ul li::after {
   content: '';
-  background-image: url(/assets/images/check.svg);
+  background-image: url(/assets/images/icons/svgs/check.svg);
   background-size: cover;
   width: 12px;
   height: 12px;
