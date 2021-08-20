@@ -156,7 +156,7 @@ ul li {
 }
 
 .display-3 {
-  font-size: 37px;
+  font-size: 35px;
 }
 
 .padding-top-150 {
@@ -356,7 +356,8 @@ section.two .feature .left .media {
   width: 100%;
 }
 
-section.two .feature .left .media img {
+section.two .feature .left .media img,
+section.two .feature .left .media video {
   width: 100%;
 }
 
@@ -388,12 +389,15 @@ section.two .feature .right {
 }
 
 section.two .feature .right .feature_details {
-  margin-bottom: 50px;
   max-width: 500px;
 }
 
 section.two .feature .right .feature_details .feature_text {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+}
+
+section.two .feature .right .feature_details .feature_text:last-child {
+  margin-bottom: 0;
 }
 
 section.two .feature .right .feature_details .feature_text p {

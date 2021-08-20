@@ -133,7 +133,7 @@ ul li {
 }
 
 .display-3 {
-	font-size: 37px;
+	font-size: 35px;
 }
 
 .padding-top-150 {
@@ -290,7 +290,8 @@ section.two {
 			margin-right: 50px;
 			.media {
 				width: 100%;
-				img {
+				img,
+				video {
 					width: 100%;
 				}
 			}
@@ -310,11 +311,15 @@ section.two {
 			align-items: center;
 
 			.feature_details {
-				margin-bottom: 50px;
+				// margin-bottom: 50px;
 				max-width: 500px;
 
 				.feature_text {
-					margin-bottom: 10px;
+					margin-bottom: 50px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+
 					p {
 						line-height: 1.5;
 						font-size: 19px;
