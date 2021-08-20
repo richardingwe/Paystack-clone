@@ -133,7 +133,11 @@ ul li {
 }
 
 .display-3 {
-	font-size: 38px;
+	font-size: 37px;
+}
+
+.padding-top-150 {
+	padding-top: 150px;
 }
 
 .p-20 {
@@ -272,7 +276,6 @@ ul li {
 }
 
 section.two {
-	padding-top: 150px;
 	padding-bottom: 150px;
 
 	.header_body {
@@ -281,6 +284,7 @@ section.two {
 
 	.feature {
 		display: flex;
+		align-items: center;
 		.left {
 			flex: 1;
 			margin-right: 50px;
@@ -292,10 +296,25 @@ section.two {
 			}
 		}
 
+		.order {
+			order: 2;
+			margin-left: 50px;
+			margin-right: 0;
+		}
+
 		.right {
 			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
 			.feature_details {
+				margin-bottom: 50px;
+				max-width: 500px;
+
 				.feature_text {
+					margin-bottom: 10px;
 					p {
 						line-height: 1.5;
 						font-size: 19px;
@@ -335,6 +354,52 @@ section.two {
 								left: 2px;
 								top: 10px;
 							}
+						}
+					}
+				}
+				.cta {
+					display: flex;
+					align-items: center;
+
+					a {
+						display: flex;
+						align-items: center;
+						color: #3bb75e;
+
+						span.svg {
+							display: flex;
+							align-items: center;
+							padding: 0 8px 0 0;
+						}
+
+						span.button_text {
+							position: relative;
+
+							&::before {
+								content: '';
+								background: #eaf8ee;
+								position: absolute;
+								top: 15px;
+								left: -2px;
+								width: 100%;
+								height: 5px;
+								z-index: -1;
+								transition: 1s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+							}
+						}
+
+						&:hover .circle {
+							fill: #3bb75e !important;
+							fill-opacity: 1;
+							transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+						}
+						&:hover .stroke {
+							stroke: white;
+							transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+						}
+
+						&:hover span.button_text::before {
+							opacity: 0;
 						}
 					}
 				}
