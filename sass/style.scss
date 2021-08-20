@@ -102,14 +102,38 @@ header nav ul li img {
 a {
 	text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #011b33;
+	line-height: 1.2;
+	margin: 0 0 10px;
+}
+
+p {
+	color: #011b33;
+}
+
+ul li {
+	list-style: none;
+	margin-bottom: 5px;
+	position: relative;
+}
+
 .display-1 {
 	font-size: 46px;
-	line-height: 1.2;
 	margin-bottom: 20px;
 }
 
 .display-2 {
 	font-size: 43px;
+}
+
+.display-3 {
+	font-size: 38px;
 }
 
 .p-20 {
@@ -258,6 +282,63 @@ section.two {
 	.feature {
 		display: flex;
 		.left {
+			flex: 1;
+			margin-right: 50px;
+			.media {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.right {
+			flex: 1;
+			.feature_details {
+				.feature_text {
+					p {
+						line-height: 1.5;
+						font-size: 19px;
+						margin: 19px 0;
+					}
+				}
+				.feature_benefits {
+					margin: 30px 0;
+					display: flex;
+
+					ul {
+						flex: 1;
+
+						li {
+							font-weight: 500;
+							padding: 5px 0 5px 20px;
+
+							&::before {
+								content: '';
+								background: #f1fef4;
+								position: absolute;
+								left: -10px;
+								top: 0;
+								height: 35px;
+								width: 40px;
+								border-radius: 6px;
+								z-index: -1;
+							}
+
+							&::after {
+								content: '';
+								background-image: url(/assets/images/check.svg);
+								background-size: cover;
+								width: 12px;
+								height: 12px;
+								position: absolute;
+								left: 2px;
+								top: 10px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
