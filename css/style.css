@@ -134,12 +134,12 @@ a {
 
 .display-2 {
   font-size: 43px;
-  font-weight: 200;
 }
 
 .p-20 {
   font-size: 20px;
   line-height: 1.5;
+  font-weight: 300;
 }
 
 .container {
@@ -246,11 +246,11 @@ a {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
-  -ms-flex-align: center;
   -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: center;
   -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
   pointer-events: none;
   border: none;
@@ -260,9 +260,9 @@ a {
   white-space: nowrap;
   vertical-align: middle;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   outline: none;
   text-decoration: none;
   -webkit-transition: 0.25s cubic-bezier(0.17, 0.635, 0.54, 1.435);
@@ -299,4 +299,13 @@ a {
   transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
   left: -39%;
   top: 9%;
+}
+
+section.two {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+section.two .header_body {
+  margin-bottom: 100px;
 }

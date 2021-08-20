@@ -110,12 +110,12 @@ a {
 
 .display-2 {
 	font-size: 43px;
-	font-weight: 200;
 }
 
 .p-20 {
 	font-size: 20px;
 	line-height: 1.5;
+	font-weight: 300;
 }
 
 .container {
@@ -199,9 +199,7 @@ a {
 					will-change: box-shadow;
 					display: -ms-flexbox;
 					display: flex;
-					-ms-flex-align: center;
 					align-items: center;
-					-ms-flex-pack: center;
 					justify-content: center;
 					pointer-events: none;
 
@@ -211,9 +209,6 @@ a {
 					font-size: 1.5rem;
 					white-space: nowrap;
 					vertical-align: middle;
-					-webkit-user-select: none;
-					-moz-user-select: none;
-					-ms-user-select: none;
 					user-select: none;
 					outline: none;
 					text-decoration: none;
@@ -249,5 +244,20 @@ a {
 		left: -39%;
 		top: 9%;
 		// height: 100%;
+	}
+}
+
+section.two {
+	padding-top: 150px;
+	padding-bottom: 150px;
+
+	.header_body {
+		margin-bottom: 100px;
+	}
+
+	.feature {
+		display: flex;
+		.left {
+		}
 	}
 }
