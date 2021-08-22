@@ -186,6 +186,10 @@ ul li {
   font-size: 36px;
 }
 
+.display-4 {
+  font-size: 24px;
+}
+
 .padding-top-150 {
   padding-top: 150px;
 }
@@ -195,6 +199,11 @@ ul li {
   line-height: 1.5;
   font-family: Graphik_regular;
   font-weight: 300;
+}
+
+.blue {
+  background-color: #eaf6fc;
+  position: relative;
 }
 
 .container {
@@ -515,7 +524,7 @@ section.two .feature .right .feature_details .cta a span.button_text::before {
   content: '';
   background: #eaf8ee;
   position: absolute;
-  top: 15px;
+  top: 11px;
   left: -2px;
   width: 100%;
   height: 5px;
@@ -539,4 +548,155 @@ section.two .feature .right .feature_details .cta a:hover .stroke {
 
 section.two .feature .right .feature_details .cta a:hover span.button_text::before {
   opacity: 0;
+}
+
+section.two .checked {
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.two .checked::before {
+  content: '';
+  background-image: url(/assets/images/patterns/checked-pattern-blue.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+
+section.two .header_body {
+  margin-bottom: 50px;
+  width: 55%;
+}
+
+section.two .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.two .cards .card {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: calc(33.3% - 20px);
+      flex-basis: calc(33.3% - 20px);
+  margin-right: 20px;
+}
+
+section.two .cards .card .card_container {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid #f0f2f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 48px 32px;
+  -webkit-box-shadow: 0px 1px 6px #00000005;
+          box-shadow: 0px 1px 6px #00000005;
+  background: white;
+  position: relative;
+  z-index: 2;
+}
+
+section.two .cards .card .card_container .card_header .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  height: 80px;
+  margin-top: -10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  height: 80px;
+}
+
+section.two .cards .card .card_container .card_header .icon img {
+  height: 100%;
+  border-style: none;
+}
+
+section.two .cards .card .card_container .card_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.two .cards .card .card_container .card_body p {
+  font-size: 16px;
+  font-family: Graphik_regular;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+section.two .cards .card .card_container .card_link a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #011b33;
+  font-size: 15px;
+  height: 40px;
+}
+
+section.two .cards .card .card_container .card_link a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 8px 0 0;
+}
+
+section.two .cards .card .card_container .card_link a:hover .circle {
+  fill-opacity: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+}
+
+section.two .cards .card .card_container .card_link a:hover .stroke {
+  stroke: white;
+  -webkit-transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+  transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
 }
