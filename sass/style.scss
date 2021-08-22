@@ -2,7 +2,28 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: Graphik_medium, sans-serif;
+}
+
+@font-face {
+	font-family: Boing;
+	src: url(/assets/fonts/boing/boing_semibold_web.woff);
+}
+@font-face {
+	font-family: Graphik_light;
+	src: url(/assets/fonts/graphik/graphik_light.woff);
+}
+@font-face {
+	font-family: Graphik_medium;
+	src: url(/assets/fonts/graphik/graphik_medium.woff);
+}
+@font-face {
+	font-family: Graphik_regular;
+	src: url(/assets/fonts/graphik/graphik_regular.woff);
+}
+@font-face {
+	font-family: Graphik_semibold;
+	src: url(/assets/fonts/graphik/graphik_semibold.woff);
 }
 
 header {
@@ -54,6 +75,7 @@ header nav ul li:last-child {
 header nav ul li a {
 	text-decoration: none;
 	color: black;
+	font-family: Graphik_medium;
 	font-weight: 500;
 	white-space: nowrap;
 	font-size: 15px;
@@ -76,7 +98,7 @@ header nav ul li a:hover {
 
 header nav ul li a.create-account {
 	background-color: #3bb75e;
-	padding: 0.6rem 1.2rem;
+	padding: 0.8rem 1.2rem;
 	border-radius: 5px;
 	color: white;
 }
@@ -111,6 +133,7 @@ h5 {
 	color: #011b33;
 	line-height: 1.2;
 	margin: 0 0 10px;
+	font-family: Boing;
 }
 
 p {
@@ -119,21 +142,21 @@ p {
 
 ul li {
 	list-style: none;
-	margin-bottom: 5px;
 	position: relative;
 }
 
 .display-1 {
-	font-size: 46px;
+	font-size: 48px;
 	margin-bottom: 20px;
+	font-weight: 800;
 }
 
 .display-2 {
-	font-size: 43px;
+	font-size: 45px;
 }
 
 .display-3 {
-	font-size: 35px;
+	font-size: 36px;
 }
 
 .padding-top-150 {
@@ -143,6 +166,7 @@ ul li {
 .p-20 {
 	font-size: 20px;
 	line-height: 1.5;
+	font-family: Graphik_regular;
 	font-weight: 300;
 }
 
@@ -171,9 +195,10 @@ ul li {
 		}
 		a {
 			background-color: #3bb75e;
-			padding: 0.8rem 1.9rem;
+			padding: 1.1rem 1.9rem;
 			border-radius: 5px;
 			color: white;
+			font-family: Graphik_medium;
 		}
 	}
 
@@ -311,7 +336,7 @@ section.two {
 			align-items: center;
 
 			.feature_details {
-				// margin-bottom: 50px;
+				margin-bottom: 50px;
 				max-width: 500px;
 
 				.feature_text {
@@ -336,6 +361,7 @@ section.two {
 						li {
 							font-weight: 500;
 							padding: 5px 0 5px 20px;
+							margin-bottom: 5px;
 
 							&::before {
 								content: '';
