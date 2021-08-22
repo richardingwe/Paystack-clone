@@ -554,4 +554,38 @@ section.two {
 			}
 		}
 	}
+	.logo_row {
+		margin-bottom: 5px;
+		display: flex;
+		min-height: 100px;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+		.logo {
+			width: 100%;
+			max-width: 150px;
+			line-height: 0;
+			user-select: none;
+			position: relative;
+			display: flex;
+			height: 28px;
+			justify-content: center;
+			align-items: center;
+
+			&:first-child {
+				padding-left: 0;
+				justify-content: flex-start;
+			}
+
+			&:last-child {
+				padding-right: 0;
+				justify-content: flex-end;
+			}
+			img {
+				max-height: 100%;
+				border-style: none;
+			}
+		}
+	}
 }

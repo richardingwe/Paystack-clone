@@ -700,3 +700,59 @@ section.two .cards .card .card_container .card_link a:hover .stroke {
   -webkit-transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
   transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
 }
+
+section.two .logo_row {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+section.two .logo_row .logo {
+  width: 100%;
+  max-width: 150px;
+  line-height: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.two .logo_row .logo:first-child {
+  padding-left: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+section.two .logo_row .logo:last-child {
+  padding-right: 0;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.two .logo_row .logo img {
+  max-height: 100%;
+  border-style: none;
+}
