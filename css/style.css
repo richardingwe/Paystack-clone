@@ -206,6 +206,11 @@ ul li {
   position: relative;
 }
 
+.off_white {
+  background-color: #f9fbfc;
+  position: relative;
+}
+
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -572,6 +577,30 @@ section.two .checked::before {
   height: 100%;
 }
 
+section.two .circular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section.two .circular::before {
+  content: '';
+  position: absolute;
+  background-image: url(/assets/images/patterns/circular-pattern.png);
+  top: -100px;
+  background-size: 700px 700px;
+  background-position: calc(100% + 200px);
+  left: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: hue-rotate(800deg) invert(0.4);
+          filter: hue-rotate(800deg) invert(0.4);
+  opacity: 0.1;
+}
+
 section.two .header_body {
   margin-bottom: 50px;
   width: 54%;
@@ -635,12 +664,35 @@ section.two .cards .card .card_container .card_header .icon {
   position: relative;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  height: 80px;
 }
 
 section.two .cards .card .card_container .card_header .icon img {
   height: 100%;
   border-style: none;
+}
+
+section.two .cards .card .card_container .card_header .testimonial_icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  margin-top: -10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  height: 28px;
+}
+
+section.two .cards .card .card_container .card_header .testimonial_icon img {
+  height: 100%;
 }
 
 section.two .cards .card .card_container .card_body {

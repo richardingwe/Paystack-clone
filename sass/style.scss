@@ -173,8 +173,14 @@ ul li {
 	font-family: Graphik_regular;
 	font-weight: 300;
 }
+
 .blue {
 	background-color: #eaf6fc;
+	position: relative;
+}
+
+.off_white {
+	background-color: #f9fbfc;
 	position: relative;
 }
 
@@ -469,6 +475,29 @@ section.two {
 			height: 100%;
 		}
 	}
+	.circular {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background-image: url(/assets/images/patterns/circular-pattern.png);
+			top: -100px;
+			background-size: 700px 700px;
+			background-position: calc(100% + 200px);
+			left: 0;
+			background-repeat: no-repeat;
+			// opacity: 0.2;
+			width: 100%;
+			height: 100%;
+			filter: hue-rotate(800deg) invert(0.4);
+			opacity: 0.1;
+		}
+	}
 	.header_body {
 		margin-bottom: 50px;
 		width: 54%;
@@ -506,10 +535,23 @@ section.two {
 						margin-bottom: 30px;
 						position: relative;
 						transition: 0.3s all;
-						height: 80px;
 						img {
 							height: 100%;
 							border-style: none;
+						}
+					}
+					.testimonial_icon {
+						display: inline-flex;
+						position: relative;
+						margin-top: -10px;
+						align-items: center;
+						user-select: none;
+						margin-bottom: 30px;
+						position: relative;
+						transition: 0.3s all;
+						height: 28px;
+						img {
+							height: 100%;
 						}
 					}
 				}
