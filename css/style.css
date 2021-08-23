@@ -719,6 +719,10 @@ section.two .cards .card .card_container .card_body p {
   margin-bottom: auto;
 }
 
+section.two .cards .card .card_container .card_body p.testimonial_text {
+  margin: 32px 0;
+}
+
 section.two .cards .card .card_container .card_link a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,6 +755,49 @@ section.two .cards .card .card_container .card_link a:hover .stroke {
   stroke: white;
   -webkit-transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
   transition: all 0.5s cubic-bezier(0.17, 0.635, 0.54, 1.435);
+}
+
+section.two .cards .card .card_container .card_testimonial {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+section.two .cards .card .card_container .card_testimonial .img {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  background-color: #eaf6fc;
+  margin-right: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+}
+
+section.two .cards .card .card_container .card_testimonial .img img {
+  width: 100%;
+}
+
+section.two .cards .card .card_container .card_testimonial .author .author_name {
+  font-family: Boing;
+  line-height: 1.1;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+section.two .cards .card .card_container .card_testimonial .author .role {
+  font-size: 13px;
+}
+
+section.two .cards .card .card_container .card_testimonial .author .role span {
+  font-family: Graphik_regular;
 }
 
 section.two .logo_row {
