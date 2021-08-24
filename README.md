@@ -1,2 +1,2 @@
 # Paystack-clone
-url: https://richardingwe.github.io/Paystack-clone
+url: https://paystack-clone-rui.netlify.app/
