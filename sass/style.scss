@@ -111,7 +111,11 @@ header nav ul li.create:hover {
 	transform: translateY(-1px);
 }
 
-header nav ul li img {
+header nav ul li span {
+	border-radius: 4px;
+	width: 16px;
+}
+header nav ul li span img {
 	width: 16px;
 }
 
