@@ -735,3 +735,85 @@ section.three {
 		}
 	}
 }
+
+section.footer {
+	padding-bottom: 150px;
+	.row {
+		display: flex;
+		margin-bottom: 48px;
+
+		&:nth-of-type(2) {
+			border-top: 1px solid rgba(240, 242, 243, 0.85);
+			padding-top: 48px;
+			margin-bottom: 0;
+		}
+
+		.column {
+			flex-grow: 0;
+			flex-shrink: 1;
+			flex-basis: 33.33%;
+			padding: 0 16px;
+			transition: 0.4s;
+
+			.country {
+				margin-top: 48px;
+			}
+
+			.group {
+				margin-bottom: 20px;
+				h4 {
+					position: relative;
+					color: #011b33;
+					display: inline-block;
+					font-size: 18px;
+					font-family: Graphik_regular;
+				}
+
+				ul {
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					li {
+						color: rgba(1, 27, 51, 0.9);
+						margin-bottom: 6px;
+						line-height: 1.6;
+						text-transform: capitalize;
+						position: relative;
+
+						a,
+						.address {
+							color: inherit;
+							font-size: 16px;
+							text-decoration: none;
+							transition: color 0.3s ease;
+							font-family: Graphik_regular;
+						}
+
+						&.address {
+							color: inherit;
+							font-size: 16px;
+							text-decoration: none;
+							transition: color 0.3s ease;
+							font-family: Graphik_regular;
+						}
+
+						.mail {
+							color: #0ba4db;
+						}
+
+						.social {
+							display: flex;
+							align-items: center;
+
+							li {
+								padding-right: 20px;
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
