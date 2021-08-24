@@ -991,14 +991,17 @@ section.footer .row .column .group ul li {
   position: relative;
 }
 
-section.footer .row .column .group ul li a,
-section.footer .row .column .group ul li .address {
+section.footer .row .column .group ul li a {
   color: inherit;
   font-size: 16px;
   text-decoration: none;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   font-family: Graphik_regular;
+}
+
+section.footer .row .column .group ul li a:hover {
+  color: #0ba4db;
 }
 
 section.footer .row .column .group ul li.address {
@@ -1012,6 +1015,10 @@ section.footer .row .column .group ul li.address {
 
 section.footer .row .column .group ul li .mail {
   color: #0ba4db;
+}
+
+section.footer .row .column .group ul li .mail:hover {
+  color: #0980aa;
 }
 
 section.footer .row .column .group ul li .social {

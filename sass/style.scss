@@ -781,13 +781,16 @@ section.footer {
 						text-transform: capitalize;
 						position: relative;
 
-						a,
-						.address {
+						a {
 							color: inherit;
 							font-size: 16px;
 							text-decoration: none;
 							transition: color 0.3s ease;
 							font-family: Graphik_regular;
+
+							&:hover {
+								color: #0ba4db;
+							}
 						}
 
 						&.address {
@@ -800,6 +803,10 @@ section.footer {
 
 						.mail {
 							color: #0ba4db;
+
+							&:hover {
+								color: #0980aa;
+							}
 						}
 
 						.social {
