@@ -1052,6 +1052,11 @@ section.footer .row .column .group h4.dropdown::before {
   transition: ease-in-out 0.1s transform;
 }
 
+section.footer .row .column .group h4.translate::before {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
 section.footer .row .column .group ul:last-of-type {
   margin-bottom: 0;
 }
@@ -1674,6 +1679,13 @@ section.footer .row .column .group ul li .social li {
   }
   section.footer .row .column .group ul.collaspe, section.footer .row .column .group ul.close {
     display: none;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  section.footer .row .column .group ul.show {
+    display: block;
+    -webkit-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
   }
   section.footer .row .column .group ul li {
     color: rgba(1, 27, 51, 0.9);

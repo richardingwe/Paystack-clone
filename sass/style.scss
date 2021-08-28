@@ -810,6 +810,7 @@ section.footer {
 			.group {
 				margin-bottom: 20px;
 				position: relative;
+
 				h4 {
 					position: relative;
 					color: #011b33;
@@ -835,6 +836,10 @@ section.footer {
 						border-color: transparent transparent transparent #011b33;
 						transition: ease-in-out 0.1s transform;
 					}
+				}
+
+				h4.translate::before {
+					transform: translateY(-50%) rotate(90deg);
 				}
 
 				ul {
@@ -1433,6 +1438,12 @@ section.footer {
 						&.collaspe,
 						&.close {
 							display: none;
+							transition: all 0.2s ease-out;
+						}
+
+						&.show {
+							display: block;
+							transition: max-height 0.2s ease-out;
 						}
 
 						li {
