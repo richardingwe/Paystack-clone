@@ -1020,6 +1020,7 @@ section.footer .row .column .country {
 
 section.footer .row .column .group {
   margin-bottom: 20px;
+  position: relative;
 }
 
 section.footer .row .column .group h4 {
@@ -1028,6 +1029,27 @@ section.footer .row .column .group h4 {
   display: inline-block;
   font-size: 18px;
   font-family: Graphik_regular;
+}
+
+section.footer .row .column .group h4.dropdown {
+  position: relative;
+}
+
+section.footer .row .column .group h4.dropdown::before {
+  content: '';
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+  border-style: solid;
+  border-width: 3px 0 3px 5.2px;
+  border-color: transparent transparent transparent #011b33;
+  -webkit-transition: ease-in-out 0.1s transform;
+  transition: ease-in-out 0.1s transform;
 }
 
 section.footer .row .column .group ul:last-of-type {
@@ -1640,9 +1662,12 @@ section.footer .row .column .group ul li .social li {
   section.footer .row .column .group h4 {
     position: relative;
     color: #011b33;
-    display: inline-block;
+    display: block;
     font-size: 16.7px;
     font-family: Graphik_regular;
+  }
+  section.footer .row .column .group h4.dropdown::before {
+    display: block;
   }
   section.footer .row .column .group ul:last-of-type {
     margin-bottom: 0;
