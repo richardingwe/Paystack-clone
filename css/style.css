@@ -1627,7 +1627,7 @@ section.footer .row .column .group ul li .social li {
         flex-shrink: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    padding: 0 16px;
+    padding: 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -1641,11 +1641,14 @@ section.footer .row .column .group ul li .social li {
     position: relative;
     color: #011b33;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16.7px;
     font-family: Graphik_regular;
   }
   section.footer .row .column .group ul:last-of-type {
     margin-bottom: 0;
+  }
+  section.footer .row .column .group ul.collaspe, section.footer .row .column .group ul.close {
+    display: none;
   }
   section.footer .row .column .group ul li {
     color: rgba(1, 27, 51, 0.9);

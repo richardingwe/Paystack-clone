@@ -1382,7 +1382,7 @@ section.footer {
 				flex-grow: 0;
 				flex-shrink: 1;
 				flex-basis: 100%;
-				padding: 0 16px;
+				padding: 0;
 				transition: 0.4s;
 
 				.country {
@@ -1395,13 +1395,18 @@ section.footer {
 						position: relative;
 						color: #011b33;
 						display: inline-block;
-						font-size: 18px;
+						font-size: 16.7px;
 						font-family: Graphik_regular;
 					}
 
 					ul {
 						&:last-of-type {
 							margin-bottom: 0;
+						}
+
+						&.collaspe,
+						&.close {
+							display: none;
 						}
 
 						li {
